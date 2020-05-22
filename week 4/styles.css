@@ -1,11 +1,16 @@
 
-div.navbar-text {
-    position: center;
-    border: 3px solid #73AD21;
-  }
+nav{ position: fixed;
+
+}
 .week4{
     color: darkblue; width: 100px; line-height: 50px; background-position: center; background-color: darkgoldenrod;;
 }
 .container{
-    width: auto;
+    width: auto; font-size: 1.5em; text-align: center;
+}
+.WillyWonka a{
+    color: aliceblue; width: 250px; background-color: darkslategrey;
+}
+.img{
+    height: 50px; width: 50px;
 }

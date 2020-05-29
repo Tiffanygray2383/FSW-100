@@ -1,39 +1,64 @@
-*{
+
+body{
     margin: 0px;
-    padding: 0 ;
+    padding: 0px;
+    background-color:rgb(61, 88, 70);
+    background-image:;}
+
+header{
+    background-color: tomato;
+    height: 110px;
+    color: darkslateblue;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: large;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "title title title"
-    "header header header"
-    "front front front"
-    "back back back"
-    "side side side"
-    "footer footer footer";
+a{
+    color: blue;
+}
+img{
+    margin: 500px center;
+    display: block;
+}
+#left-nav{
+    float: left;
+    margin: 80px;
+    color: black;
+}
+#right-nav{
+    float: right;
+    margin: 15px;
+    color: whitesmoke;
+}
+table{
+    width: 200px;
+    /border-spacing: 20px;/
+}
+th{
+    text-align: center;
+}
+table, th, td{
+    border: 3px solid #322a2a;
+    border-collapse: collapse;
 }
 
-.title{
-    grid-area: title;
-    background-color:#F5C6D6;
-    grid-column: 1/4;
+
+footer{
+    clear: both;
+    text-align: center;
+    background: #322a2a;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: darkblue;
+    color: ghostwhite;
+}
+
+@media (min-width: 768px){
+    .container {
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 10px
+
     }
-.header{
-        grid-area: header;
-        background-color: #EE2E84;
-        grid-column: 1/2;
-        }
-.front{
-        grid-area: front;
-        background-color: #85CFD8;
-            }
-.back{
-        grid-area: back;
-        background-color: #8DC63F;
-        grid-column: 1/3; }
-.side{
-    grid-area: side;
-    background-color:#E76E34 ;
-                    }
-                
+
